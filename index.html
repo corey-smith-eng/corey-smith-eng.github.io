@@ -1,7 +1,64 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
-</html>
+<div class="container">
+  <div class="scroll">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+    <div class="item">Item 6</div>
+    <div class="item">Item 7</div>
+    <div class="item">Item 8</div>
+    <div class="item">Item 9</div>
+    <div class="item">Item 10</div>
+  </div>
+</div>
+
+<style>
+  .container {
+    position: relative;
+    width: 600px;
+    height: 200px;
+    margin: 0 auto;
+    border: 2px solid #ccc;
+    overflow: hidden;
+  }
+
+  .scroll {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .item {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-color: #f1f1f1;
+    margin-right: 20px;
+  }
+</style>
+
+<script>
+  var container = document.querySelector('.container');
+  var scroll = document.querySelector('.scroll');
+
+  container.addEventListener('mousemove', function(e) {
+    var x = e.clientX - container.offsetLeft;
+    var w = container.offsetWidth;
+    var scrollWidth = scroll.scrollWidth;
+    var maxScroll = scrollWidth - w;
+
+    if (x < 50) {
+      scroll.scrollLeft -= 10;
+    } else if (x > w - 50) {
+      scroll.scrollLeft += 10;
+    }
+  });
+</script>
