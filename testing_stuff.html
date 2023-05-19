@@ -1,0 +1,55 @@
+<button class="collapsible">Toggle Content</button>
+<div class="content">
+  <p>This is the collapsible content.</p>
+</div>
+
+<style>
+/* ------- Container stuff -----------*/
+.collapsible {
+  background-color: #eee;
+  color: #333;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  text-align: left;
+  outline: none;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 10px;
+  transition: max-height 0.3s ease;
+}
+
+.collapsible.active {
+  background-color: #ccc;
+}
+
+.collapsible.active + .content {
+  max-height: 1000px; /* Adjust the max-height to fit your content */
+}
+
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+});
+
+</script>
