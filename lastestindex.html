@@ -1,0 +1,214 @@
+<div class="mini-html">
+  <table class="custom-table">
+    <tbody>
+      <!-- Title -->
+      <tr>
+        <td class="b" colspan="12" align="center">
+          <b>Battle Stats</b>
+        </td>
+      </tr>
+      <!-- Header -->
+      <tr>
+        <td class="a battle-name">
+          Name
+        </td>
+        <td class="a battle-age">
+          Age
+        </td>
+        <td class="a battle-int">
+          INT
+        </td>
+        <td class="a battle-spd">
+          SPD
+        </td>
+        <td class="a battle-pwr">
+          PWR
+        </td>
+        <td class="a battle-vis">
+          VIS
+        </td>
+        <td class="a battle-fought">
+          Fought
+        </td>
+        <td class="a battle-points">
+          Points
+        </td>
+        <td class="a battle-won">
+          Won
+        </td>
+        <td class="a battle-lost">
+          Lost
+        </td>
+        <td class="a battle-marks-won">
+          Marks Won
+        </td>
+        <td class="a battle-marks-lost">
+          Marks Lost
+        </td>
+
+      </tr>
+      <!-- Rows -->
+      <tr>
+        <td class="c battle-name">
+          <a href="dragon.php?id=4092">Neptune</a>
+        </td>
+        <td class="c battle-age">
+          53
+        </td>
+        <td class="c battle-int">
+          123 <span class="increase">▲22</span>
+        </td>
+        <td class="c battle-spd">
+          123 <span class="increase">▲22</span>
+        </td>
+        <td class="c battle-pwr">
+          123 <span class="increase">▲22</span>
+        </td>
+        <td class="c battle-vis">
+          123 <span class="increase">▲22</span>
+        </td>
+        <td class="c battle-fought">
+          111
+        </td>
+        <td class="c battle-points">
+          111 <span class="increase">▲22</span>
+        </td>
+        <td class="c battle-won">
+          222
+        </td>
+        <td class="c battle-lost">
+          222
+        </td>
+        <td class="c battle-marks-won">
+          $ 600,000 <span class="increase">▲2</span>
+        </td>
+        <td class="c battle-marks-lost">
+          $ -600,000 <span class="decrease">▼2</span>
+        </td>
+      </tr>
+
+
+    </tbody>
+  </table>
+</div>
+<!---->
+
+<style>
+/* ------- Container stuff -----------*/
+.collapsible {
+  background-color: #8c0d06;
+  box-shadow: 0 0 10px #720906;
+  color: #ffffff;
+  border: 0px solid #574761;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  text-align: left;
+  outline: none;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  z-index: 2;
+}
+.increase {
+    color: #04d304;
+}
+.decrease {
+    color: #ff3737;
+}
+
+.battle-name {
+  width: 15%;
+}
+
+.battle-age {
+  width: 3%;
+}
+
+.battle-fought,
+.battle-won,
+.battle-lost {
+  width: 4%;
+}
+
+.battle-marks-won,
+.battle-marks-lost {
+  width: 8%;
+}
+
+.battle-int,
+.battle-spd,
+.battle-pwr,
+.battle-vis,
+.battle-points {
+  width: 7%;
+}
+
+
+
+
+.mini-html {
+  max-width: 100%;
+}
+
+.custom-table {
+    width: 100%;
+    font-size: 11pt;
+    border-spacing: 4px;
+    margin: auto;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+}
+
+
+.a {
+    background-color: #8c0d06;
+    border: 0px solid #e6dfe7;
+    box-shadow: 0 0 10px #720906;
+    border-radius: 5px;
+    color: white;
+}
+
+.b {
+    background-color: #720906;
+    box-shadow: 0 0 10px #720906;
+    color: #ffffff;
+    border: 0px solid #574761;
+    border-radius: 5px;
+}
+
+.c {
+    background-color: #c73923;
+    border: 0px solid #d1d1d1;
+    border-radius: 5px;
+    box-shadow: 0 0 7px #720906;
+    color: white;
+}
+
+td {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    padding: 3px 0 3px 0;
+    text-align: center;
+}
+
+</style>
+
+<script>
+
+// Send the height information to the parent page
+function sendHeightToParent() {
+  var height = document.body.scrollHeight;
+  parent.postMessage({ height: height }, '*');
+}
+
+// Call the sendHeightToParent function whenever the content changes
+// For example, after the page finishes loading or when new content is added dynamically
+window.addEventListener('load', sendHeightToParent);
+
+</script>
