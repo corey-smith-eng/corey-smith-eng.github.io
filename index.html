@@ -1,7 +1,13 @@
+<!--        <div id="content-wrapper">-->
+<!--  <iframe id="content-iframe" src="https://corey-smith-eng.github.io/" frameborder="0" width="100%" scrolling="no"></iframe>-->
+<!--</div>-->
 
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <div class="mini-html">
         <!-- Battle Table -->
-        
+
       <table class="custom-table">
     <tbody>
       <!-- Title -->
@@ -33,8 +39,8 @@
         <td class="a battle-fought">
           Fought
         </td>
-        <td class="a battle-points">
-          Points
+        <td class="a battle-points" data-sort="none">
+          Points <span class="filter-symbol"></span>
         </td>
         <td class="a battle-won">
           Won
@@ -42,8 +48,8 @@
         <td class="a battle-lost">
           Lost
         </td>
-        <td class="a battle-marks-won">
-          Marks Won
+        <td class="a battle-marks-won" data-sort="none">
+          Marks Won <span class="filter-symbol"></span>
         </td>
         <td class="a battle-marks-lost">
           Marks Lost
@@ -51,1069 +57,1069 @@
 
       </tr>
       <!-- Rows -->
-    
+
               <tr>
             <td class="c battle-name">
               <a href="https://leviathan-myth.com/dragon.php?id=6890" target="_top">Tyrach</a>
             </td>
             <td class="c battle-age">
-              26
+              28
             </td>
             <td class="c battle-int">
-              123 <span class="increase">▲2</span>
+              133 <span class="increase">&#9650;4</span>
             </td>
             <td class="c battle-spd">
-              95 <span class="increase">▲1</span>
+              99 <span class="increase">&#9650;2</span>
             </td>
             <td class="c battle-pwr">
-              90 <span class="increase">▲7</span>
+              106 <span class="increase">&#9650;8</span>
             </td>
             <td class="c battle-vis">
-              29 <span class="increase">▲0</span>
-            </td>
-            <td class="c battle-fought">
-              30
-            </td>
-            <td class="c battle-points">
-              85 <span class="increase">▲16</span>
-            </td>
-            <td class="c battle-won">
-              29
-            </td>
-            <td class="c battle-lost">
-              1
-            </td>
-            <td class="c battle-marks-won">
-              $ 18891 <span class="increase">▲3385</span>
-            </td>
-            <td class="c battle-marks-lost">
-              $ -85 <span class="decrease">▼0</span>
-            </td>
-          </tr>
-         
-              <tr>
-            <td class="c battle-name">
-              <a href="https://leviathan-myth.com/dragon.php?id=6284" target="_top">Typhon</a>
-            </td>
-            <td class="c battle-age">
-              57
-            </td>
-            <td class="c battle-int">
-              233 <span class="increase">▲6</span>
-            </td>
-            <td class="c battle-spd">
-              191 <span class="increase">▲1</span>
-            </td>
-            <td class="c battle-pwr">
-              226 <span class="increase">▲5</span>
-            </td>
-            <td class="c battle-vis">
-              68 <span class="increase">▲1</span>
-            </td>
-            <td class="c battle-fought">
-              159
-            </td>
-            <td class="c battle-points">
-              285 <span class="increase">▲10</span>
-            </td>
-            <td class="c battle-won">
-              118
-            </td>
-            <td class="c battle-lost">
-              41
-            </td>
-            <td class="c battle-marks-won">
-              $ 27866 <span class="increase">▲572</span>
-            </td>
-            <td class="c battle-marks-lost">
-              $ -3114 <span class="decrease">▼0</span>
-            </td>
-          </tr>
-         
-              <tr>
-            <td class="c battle-name">
-              <a href="https://leviathan-myth.com/dragon.php?id=6884" target="_top">Thalia</a>
-            </td>
-            <td class="c battle-age">
-              27
-            </td>
-            <td class="c battle-int">
-              107 <span class="increase">▲4</span>
-            </td>
-            <td class="c battle-spd">
-              86 <span class="increase">▲4</span>
-            </td>
-            <td class="c battle-pwr">
-              86 <span class="increase">▲7</span>
-            </td>
-            <td class="c battle-vis">
-              35 <span class="increase">▲0</span>
+              32 <span class="increase">&#9650;1</span>
             </td>
             <td class="c battle-fought">
               40
             </td>
             <td class="c battle-points">
-              115 <span class="increase">▲18</span>
+              109 <span class="increase">&#9650;12</span>
             </td>
             <td class="c battle-won">
-              35
-            </td>
-            <td class="c battle-lost">
-              5
-            </td>
-            <td class="c battle-marks-won">
-              $ 41251 <span class="increase">▲8863</span>
-            </td>
-            <td class="c battle-marks-lost">
-              $ -390 <span class="decrease">▼0</span>
-            </td>
-          </tr>
-         
-              <tr>
-            <td class="c battle-name">
-              <a href="https://leviathan-myth.com/dragon.php?id=6195" target="_top">RYU</a>
-            </td>
-            <td class="c battle-age">
-              59
-            </td>
-            <td class="c battle-int">
-              218 <span class="increase">▲8</span>
-            </td>
-            <td class="c battle-spd">
-              189 <span class="increase">▲5</span>
-            </td>
-            <td class="c battle-pwr">
-              212 <span class="increase">▲4</span>
-            </td>
-            <td class="c battle-vis">
-              84 <span class="increase">▲1</span>
-            </td>
-            <td class="c battle-fought">
-              155
-            </td>
-            <td class="c battle-points">
-              313 <span class="increase">▲3</span>
-            </td>
-            <td class="c battle-won">
-              122
-            </td>
-            <td class="c battle-lost">
-              33
-            </td>
-            <td class="c battle-marks-won">
-              $ 34406 <span class="increase">▲124</span>
-            </td>
-            <td class="c battle-marks-lost">
-              $ -2498 <span class="decrease">▼0</span>
-            </td>
-          </tr>
-         
-              <tr>
-            <td class="c battle-name">
-              <a href="https://leviathan-myth.com/dragon.php?id=5891" target="_top">Quickbleed</a>
-            </td>
-            <td class="c battle-age">
-              66
-            </td>
-            <td class="c battle-int">
-              257 <span class="increase">▲3</span>
-            </td>
-            <td class="c battle-spd">
-              194 <span class="increase">▲4</span>
-            </td>
-            <td class="c battle-pwr">
-              279 <span class="increase">▲4</span>
-            </td>
-            <td class="c battle-vis">
-              83 <span class="increase">▲4</span>
-            </td>
-            <td class="c battle-fought">
-              188
-            </td>
-            <td class="c battle-points">
-              330 <span class="increase">▲7</span>
-            </td>
-            <td class="c battle-won">
-              135
-            </td>
-            <td class="c battle-lost">
-              53
-            </td>
-            <td class="c battle-marks-won">
-              $ 29354 <span class="increase">▲251</span>
-            </td>
-            <td class="c battle-marks-lost">
-              $ -4005 <span class="decrease">▼0</span>
-            </td>
-          </tr>
-         
-              <tr>
-            <td class="c battle-name">
-              <a href="https://leviathan-myth.com/dragon.php?id=6516" target="_top">Phile</a>
-            </td>
-            <td class="c battle-age">
-              45
-            </td>
-            <td class="c battle-int">
-              176 <span class="increase">▲5</span>
-            </td>
-            <td class="c battle-spd">
-              144 <span class="increase">▲4</span>
-            </td>
-            <td class="c battle-pwr">
-              193 <span class="increase">▲9</span>
-            </td>
-            <td class="c battle-vis">
-              79 <span class="increase">▲1</span>
-            </td>
-            <td class="c battle-fought">
-              126
-            </td>
-            <td class="c battle-points">
-              282 <span class="increase">▲9</span>
-            </td>
-            <td class="c battle-won">
-              105
-            </td>
-            <td class="c battle-lost">
-              21
-            </td>
-            <td class="c battle-marks-won">
-              $ 35935 <span class="increase">▲483</span>
-            </td>
-            <td class="c battle-marks-lost">
-              $ -1525 <span class="decrease">▼0</span>
-            </td>
-          </tr>
-         
-              <tr>
-            <td class="c battle-name">
-              <a href="https://leviathan-myth.com/dragon.php?id=5908" target="_top">Oedipus </a>
-            </td>
-            <td class="c battle-age">
-              68
-            </td>
-            <td class="c battle-int">
-              250 <span class="increase">▲4</span>
-            </td>
-            <td class="c battle-spd">
-              183 <span class="increase">▲2</span>
-            </td>
-            <td class="c battle-pwr">
-              261 <span class="increase">▲9</span>
-            </td>
-            <td class="c battle-vis">
-              98 <span class="increase">▲3</span>
-            </td>
-            <td class="c battle-fought">
-              177
-            </td>
-            <td class="c battle-points">
-              354 <span class="increase">▲12</span>
-            </td>
-            <td class="c battle-won">
-              147
-            </td>
-            <td class="c battle-lost">
-              30
-            </td>
-            <td class="c battle-marks-won">
-              $ 79444 <span class="increase">▲623</span>
-            </td>
-            <td class="c battle-marks-lost">
-              $ -2109 <span class="decrease">▼0</span>
-            </td>
-          </tr>
-         
-              <tr>
-            <td class="c battle-name">
-              <a href="https://leviathan-myth.com/dragon.php?id=6513" target="_top">Niobe</a>
-            </td>
-            <td class="c battle-age">
-              45
-            </td>
-            <td class="c battle-int">
-              189 <span class="increase">▲5</span>
-            </td>
-            <td class="c battle-spd">
-              138 <span class="increase">▲3</span>
-            </td>
-            <td class="c battle-pwr">
-              206 <span class="increase">▲7</span>
-            </td>
-            <td class="c battle-vis">
-              52 <span class="increase">▲3</span>
-            </td>
-            <td class="c battle-fought">
-              123
-            </td>
-            <td class="c battle-points">
-              259 <span class="increase">▲14</span>
-            </td>
-            <td class="c battle-won">
-              98
-            </td>
-            <td class="c battle-lost">
-              25
-            </td>
-            <td class="c battle-marks-won">
-              $ 14956 <span class="increase">▲1040</span>
-            </td>
-            <td class="c battle-marks-lost">
-              $ -1884 <span class="decrease">▼0</span>
-            </td>
-          </tr>
-         
-              <tr>
-            <td class="c battle-name">
-              <a href="https://leviathan-myth.com/dragon.php?id=6322" target="_top">Nestor</a>
-            </td>
-            <td class="c battle-age">
-              55
-            </td>
-            <td class="c battle-int">
-              215 <span class="increase">▲6</span>
-            </td>
-            <td class="c battle-spd">
-              173 <span class="increase">▲4</span>
-            </td>
-            <td class="c battle-pwr">
-              218 <span class="increase">▲9</span>
-            </td>
-            <td class="c battle-vis">
-              71 <span class="increase">▲2</span>
-            </td>
-            <td class="c battle-fought">
-              141
-            </td>
-            <td class="c battle-points">
-              293 <span class="increase">▲5</span>
-            </td>
-            <td class="c battle-won">
-              119
-            </td>
-            <td class="c battle-lost">
-              22
-            </td>
-            <td class="c battle-marks-won">
-              $ 86502 <span class="increase">▲194</span>
-            </td>
-            <td class="c battle-marks-lost">
-              $ -1706 <span class="decrease">▼0</span>
-            </td>
-          </tr>
-         
-              <tr>
-            <td class="c battle-name">
-              <a href="https://leviathan-myth.com/dragon.php?id=4092" target="_top">Neptune</a>
-            </td>
-            <td class="c battle-age">
-              73
-            </td>
-            <td class="c battle-int">
-              255 <span class="increase">▲5</span>
-            </td>
-            <td class="c battle-spd">
-              191 <span class="increase">▲5</span>
-            </td>
-            <td class="c battle-pwr">
-              280 <span class="increase">▲8</span>
-            </td>
-            <td class="c battle-vis">
-              94 <span class="increase">▲3</span>
-            </td>
-            <td class="c battle-fought">
-              191
-            </td>
-            <td class="c battle-points">
-              374 <span class="increase">▲17</span>
-            </td>
-            <td class="c battle-won">
-              152
-            </td>
-            <td class="c battle-lost">
-              39
-            </td>
-            <td class="c battle-marks-won">
-              $ 71728 <span class="increase">▲1004</span>
-            </td>
-            <td class="c battle-marks-lost">
-              $ -2925 <span class="decrease">▼0</span>
-            </td>
-          </tr>
-         
-              <tr>
-            <td class="c battle-name">
-              <a href="https://leviathan-myth.com/dragon.php?id=6906" target="_top">Merope</a>
-            </td>
-            <td class="c battle-age">
-              25
-            </td>
-            <td class="c battle-int">
-              93 <span class="increase">▲1</span>
-            </td>
-            <td class="c battle-spd">
-              83 <span class="increase">▲3</span>
-            </td>
-            <td class="c battle-pwr">
-              61 <span class="increase">▲3</span>
-            </td>
-            <td class="c battle-vis">
-              41 <span class="increase">▲3</span>
-            </td>
-            <td class="c battle-fought">
-              30
-            </td>
-            <td class="c battle-points">
-              67 <span class="increase">▲9</span>
-            </td>
-            <td class="c battle-won">
-              26
-            </td>
-            <td class="c battle-lost">
-              4
-            </td>
-            <td class="c battle-marks-won">
-              $ 3962 <span class="increase">▲445</span>
-            </td>
-            <td class="c battle-marks-lost">
-              $ -325 <span class="decrease">▼81</span>
-            </td>
-          </tr>
-         
-              <tr>
-            <td class="c battle-name">
-              <a href="https://leviathan-myth.com/dragon.php?id=5912" target="_top">Medea </a>
-            </td>
-            <td class="c battle-age">
-              68
-            </td>
-            <td class="c battle-int">
-              234 <span class="increase">▲4</span>
-            </td>
-            <td class="c battle-spd">
-              175 <span class="increase">▲2</span>
-            </td>
-            <td class="c battle-pwr">
-              279 <span class="increase">▲7</span>
-            </td>
-            <td class="c battle-vis">
-              94 <span class="increase">▲1</span>
-            </td>
-            <td class="c battle-fought">
-              170
-            </td>
-            <td class="c battle-points">
-              324 <span class="increase">▲3</span>
-            </td>
-            <td class="c battle-won">
-              138
-            </td>
-            <td class="c battle-lost">
-              32
-            </td>
-            <td class="c battle-marks-won">
-              $ 79152 <span class="increase">▲116</span>
-            </td>
-            <td class="c battle-marks-lost">
-              $ -2404 <span class="decrease">▼0</span>
-            </td>
-          </tr>
-         
-              <tr>
-            <td class="c battle-name">
-              <a href="https://leviathan-myth.com/dragon.php?id=6132" target="_top">Lernaean</a>
-            </td>
-            <td class="c battle-age">
-              63
-            </td>
-            <td class="c battle-int">
-              234 <span class="increase">▲6</span>
-            </td>
-            <td class="c battle-spd">
-              187 <span class="increase">▲3</span>
-            </td>
-            <td class="c battle-pwr">
-              244 <span class="increase">▲10</span>
-            </td>
-            <td class="c battle-vis">
-              93 <span class="increase">▲3</span>
-            </td>
-            <td class="c battle-fought">
-              171
-            </td>
-            <td class="c battle-points">
-              327 <span class="increase">▲8</span>
-            </td>
-            <td class="c battle-won">
-              137
-            </td>
-            <td class="c battle-lost">
-              34
-            </td>
-            <td class="c battle-marks-won">
-              $ 25289 <span class="increase">▲259</span>
-            </td>
-            <td class="c battle-marks-lost">
-              $ -2526 <span class="decrease">▼0</span>
-            </td>
-          </tr>
-         
-              <tr>
-            <td class="c battle-name">
-              <a href="https://leviathan-myth.com/dragon.php?id=6285" target="_top">Ladon </a>
-            </td>
-            <td class="c battle-age">
-              57
-            </td>
-            <td class="c battle-int">
-              201 <span class="increase">▲5</span>
-            </td>
-            <td class="c battle-spd">
-              188 <span class="increase">▲3</span>
-            </td>
-            <td class="c battle-pwr">
-              245 <span class="increase">▲6</span>
-            </td>
-            <td class="c battle-vis">
-              69 <span class="increase">▲2</span>
-            </td>
-            <td class="c battle-fought">
-              154
-            </td>
-            <td class="c battle-points">
-              323 <span class="increase">▲5</span>
-            </td>
-            <td class="c battle-won">
-              117
-            </td>
-            <td class="c battle-lost">
-              37
-            </td>
-            <td class="c battle-marks-won">
-              $ 89305 <span class="increase">▲1226</span>
-            </td>
-            <td class="c battle-marks-lost">
-              $ -2705 <span class="decrease">▼0</span>
-            </td>
-          </tr>
-         
-              <tr>
-            <td class="c battle-name">
-              <a href="https://leviathan-myth.com/dragon.php?id=6465" target="_top">Jocasta</a>
-            </td>
-            <td class="c battle-age">
-              48
-            </td>
-            <td class="c battle-int">
-              174 <span class="increase">▲4</span>
-            </td>
-            <td class="c battle-spd">
-              152 <span class="increase">▲3</span>
-            </td>
-            <td class="c battle-pwr">
-              220 <span class="increase">▲9</span>
-            </td>
-            <td class="c battle-vis">
-              72 <span class="increase">▲1</span>
-            </td>
-            <td class="c battle-fought">
-              135
-            </td>
-            <td class="c battle-points">
-              283 <span class="increase">▲9</span>
-            </td>
-            <td class="c battle-won">
-              124
-            </td>
-            <td class="c battle-lost">
-              11
-            </td>
-            <td class="c battle-marks-won">
-              $ 57792 <span class="increase">▲2475</span>
-            </td>
-            <td class="c battle-marks-lost">
-              $ -790 <span class="decrease">▼0</span>
-            </td>
-          </tr>
-         
-              <tr>
-            <td class="c battle-name">
-              <a href="https://leviathan-myth.com/dragon.php?id=6323" target="_top">Io</a>
-            </td>
-            <td class="c battle-age">
-              55
-            </td>
-            <td class="c battle-int">
-              198 <span class="increase">▲3</span>
-            </td>
-            <td class="c battle-spd">
-              171 <span class="increase">▲4</span>
-            </td>
-            <td class="c battle-pwr">
-              225 <span class="increase">▲5</span>
-            </td>
-            <td class="c battle-vis">
-              87 <span class="increase">▲1</span>
-            </td>
-            <td class="c battle-fought">
-              147
-            </td>
-            <td class="c battle-points">
-              285 <span class="increase">▲9</span>
-            </td>
-            <td class="c battle-won">
-              126
-            </td>
-            <td class="c battle-lost">
-              21
-            </td>
-            <td class="c battle-marks-won">
-              $ 62477 <span class="increase">▲435</span>
-            </td>
-            <td class="c battle-marks-lost">
-              $ -1673 <span class="decrease">▼0</span>
-            </td>
-          </tr>
-         
-              <tr>
-            <td class="c battle-name">
-              <a href="https://leviathan-myth.com/dragon.php?id=6769" target="_top">Hestia</a>
-            </td>
-            <td class="c battle-age">
-              32
-            </td>
-            <td class="c battle-int">
-              148 <span class="increase">▲3</span>
-            </td>
-            <td class="c battle-spd">
-              107 <span class="increase">▲5</span>
-            </td>
-            <td class="c battle-pwr">
-              118 <span class="increase">▲7</span>
-            </td>
-            <td class="c battle-vis">
-              57 <span class="increase">▲1</span>
-            </td>
-            <td class="c battle-fought">
-              65
-            </td>
-            <td class="c battle-points">
-              157 <span class="increase">▲15</span>
-            </td>
-            <td class="c battle-won">
-              61
-            </td>
-            <td class="c battle-lost">
-              4
-            </td>
-            <td class="c battle-marks-won">
-              $ 42188 <span class="increase">▲949</span>
-            </td>
-            <td class="c battle-marks-lost">
-              $ -277 <span class="decrease">▼0</span>
-            </td>
-          </tr>
-         
-              <tr>
-            <td class="c battle-name">
-              <a href="https://leviathan-myth.com/dragon.php?id=6643" target="_top">Harmonia</a>
-            </td>
-            <td class="c battle-age">
               38
-            </td>
-            <td class="c battle-int">
-              177 <span class="increase">▲9</span>
-            </td>
-            <td class="c battle-spd">
-              128 <span class="increase">▲1</span>
-            </td>
-            <td class="c battle-pwr">
-              164 <span class="increase">▲5</span>
-            </td>
-            <td class="c battle-vis">
-              58 <span class="increase">▲3</span>
-            </td>
-            <td class="c battle-fought">
-              92
-            </td>
-            <td class="c battle-points">
-              210 <span class="increase">▲12</span>
-            </td>
-            <td class="c battle-won">
-              86
-            </td>
-            <td class="c battle-lost">
-              6
-            </td>
-            <td class="c battle-marks-won">
-              $ 57339 <span class="increase">▲678</span>
-            </td>
-            <td class="c battle-marks-lost">
-              $ -449 <span class="decrease">▼0</span>
-            </td>
-          </tr>
-         
-              <tr>
-            <td class="c battle-name">
-              <a href="https://leviathan-myth.com/dragon.php?id=6515" target="_top">Eurydice</a>
-            </td>
-            <td class="c battle-age">
-              45
-            </td>
-            <td class="c battle-int">
-              149 <span class="increase">▲1</span>
-            </td>
-            <td class="c battle-spd">
-              137 <span class="increase">▲3</span>
-            </td>
-            <td class="c battle-pwr">
-              192 <span class="increase">▲4</span>
-            </td>
-            <td class="c battle-vis">
-              64 <span class="increase">▲2</span>
-            </td>
-            <td class="c battle-fought">
-              124
-            </td>
-            <td class="c battle-points">
-              239 <span class="increase">▲14</span>
-            </td>
-            <td class="c battle-won">
-              104
-            </td>
-            <td class="c battle-lost">
-              20
-            </td>
-            <td class="c battle-marks-won">
-              $ 13819 <span class="increase">▲876</span>
-            </td>
-            <td class="c battle-marks-lost">
-              $ -1434 <span class="decrease">▼0</span>
-            </td>
-          </tr>
-         
-              <tr>
-            <td class="c battle-name">
-              <a href="https://leviathan-myth.com/dragon.php?id=6932" target="_top">Eteocles</a>
-            </td>
-            <td class="c battle-age">
-              22
-            </td>
-            <td class="c battle-int">
-              97 <span class="increase">▲3</span>
-            </td>
-            <td class="c battle-spd">
-              77 <span class="increase">▲3</span>
-            </td>
-            <td class="c battle-pwr">
-              58 <span class="increase">▲5</span>
-            </td>
-            <td class="c battle-vis">
-              36 <span class="increase">▲4</span>
-            </td>
-            <td class="c battle-fought">
-              15
-            </td>
-            <td class="c battle-points">
-              43 <span class="increase">▲14</span>
-            </td>
-            <td class="c battle-won">
-              14
-            </td>
-            <td class="c battle-lost">
-              1
-            </td>
-            <td class="c battle-marks-won">
-              $ 13656 <span class="increase">▲2786</span>
-            </td>
-            <td class="c battle-marks-lost">
-              $ -62 <span class="decrease">▼0</span>
-            </td>
-          </tr>
-         
-              <tr>
-            <td class="c battle-name">
-              <a href="https://leviathan-myth.com/dragon.php?id=6514" target="_top">Dardanus</a>
-            </td>
-            <td class="c battle-age">
-              45
-            </td>
-            <td class="c battle-int">
-              175 <span class="increase">▲10</span>
-            </td>
-            <td class="c battle-spd">
-              152 <span class="increase">▲2</span>
-            </td>
-            <td class="c battle-pwr">
-              150 <span class="increase">▲8</span>
-            </td>
-            <td class="c battle-vis">
-              63 <span class="increase">▲1</span>
-            </td>
-            <td class="c battle-fought">
-              124
-            </td>
-            <td class="c battle-points">
-              249 <span class="increase">▲14</span>
-            </td>
-            <td class="c battle-won">
-              105
-            </td>
-            <td class="c battle-lost">
-              19
-            </td>
-            <td class="c battle-marks-won">
-              $ 15828 <span class="increase">▲928</span>
-            </td>
-            <td class="c battle-marks-lost">
-              $ -1356 <span class="decrease">▼0</span>
-            </td>
-          </tr>
-         
-              <tr>
-            <td class="c battle-name">
-              <a href="https://leviathan-myth.com/dragon.php?id=6900" target="_top">Cybele</a>
-            </td>
-            <td class="c battle-age">
-              25
-            </td>
-            <td class="c battle-int">
-              98 <span class="increase">▲7</span>
-            </td>
-            <td class="c battle-spd">
-              77 <span class="increase">▲2</span>
-            </td>
-            <td class="c battle-pwr">
-              65 <span class="increase">▲7</span>
-            </td>
-            <td class="c battle-vis">
-              40 <span class="increase">▲2</span>
-            </td>
-            <td class="c battle-fought">
-              30
-            </td>
-            <td class="c battle-points">
-              67 <span class="increase">▲11</span>
-            </td>
-            <td class="c battle-won">
-              28
             </td>
             <td class="c battle-lost">
               2
             </td>
             <td class="c battle-marks-won">
-              $ 6605 <span class="increase">▲653</span>
+              $ 20413 <span class="increase">&#9650;788</span>
             </td>
             <td class="c battle-marks-lost">
-              $ -157 <span class="decrease">▼99</span>
+              $ -138 <span class="decrease">&#9650;53</span>
             </td>
           </tr>
-         
+
               <tr>
             <td class="c battle-name">
-              <a href="https://leviathan-myth.com/dragon.php?id=6512" target="_top">Cadmus</a>
+              <a href="https://leviathan-myth.com/dragon.php?id=6284" target="_top">Typhon</a>
             </td>
             <td class="c battle-age">
-              45
+              59
             </td>
             <td class="c battle-int">
-              145 <span class="increase">▲0</span>
+              244 <span class="increase">&#9650;6</span>
             </td>
             <td class="c battle-spd">
-              143 <span class="increase">▲2</span>
+              201 <span class="increase">&#9650;5</span>
             </td>
             <td class="c battle-pwr">
-              171 <span class="increase">▲5</span>
+              232 <span class="increase">&#9650;0</span>
             </td>
             <td class="c battle-vis">
-              72 <span class="increase">▲0</span>
+              74 <span class="increase">&#9650;3</span>
             </td>
             <td class="c battle-fought">
-              126
+              165
             </td>
             <td class="c battle-points">
-              259 <span class="increase">▲13</span>
+              296 <span class="increase">&#9650;3</span>
             </td>
             <td class="c battle-won">
-              106
+              124
             </td>
             <td class="c battle-lost">
-              20
+              41
             </td>
             <td class="c battle-marks-won">
-              $ 14880 <span class="increase">▲945</span>
+              $ 28411 <span class="increase">&#9650;128</span>
             </td>
             <td class="c battle-marks-lost">
-              $ -1425 <span class="decrease">▼0</span>
+              $ -3114 <span class="decrease">&#9650;0</span>
             </td>
           </tr>
-         
+
               <tr>
             <td class="c battle-name">
-              <a href="https://leviathan-myth.com/dragon.php?id=5907" target="_top">Andro</a>
+              <a href="https://leviathan-myth.com/dragon.php?id=6884" target="_top">Thalia</a>
+            </td>
+            <td class="c battle-age">
+              29
+            </td>
+            <td class="c battle-int">
+              117 <span class="increase">&#9650;3</span>
+            </td>
+            <td class="c battle-spd">
+              95 <span class="increase">&#9650;5</span>
+            </td>
+            <td class="c battle-pwr">
+              95 <span class="increase">&#9650;3</span>
+            </td>
+            <td class="c battle-vis">
+              41 <span class="increase">&#9650;3</span>
+            </td>
+            <td class="c battle-fought">
+              50
+            </td>
+            <td class="c battle-points">
+              142 <span class="increase">&#9650;11</span>
+            </td>
+            <td class="c battle-won">
+              44
+            </td>
+            <td class="c battle-lost">
+              6
+            </td>
+            <td class="c battle-marks-won">
+              $ 53335 <span class="increase">&#9650;4785</span>
+            </td>
+            <td class="c battle-marks-lost">
+              $ -451 <span class="decrease">&#9650;61</span>
+            </td>
+          </tr>
+
+              <tr>
+            <td class="c battle-name">
+              <a href="https://leviathan-myth.com/dragon.php?id=6195" target="_top">RYU</a>
+            </td>
+            <td class="c battle-age">
+              61
+            </td>
+            <td class="c battle-int">
+              228 <span class="increase">&#9650;6</span>
+            </td>
+            <td class="c battle-spd">
+              194 <span class="increase">&#9650;3</span>
+            </td>
+            <td class="c battle-pwr">
+              221 <span class="increase">&#9650;7</span>
+            </td>
+            <td class="c battle-vis">
+              87 <span class="increase">&#9650;1</span>
+            </td>
+            <td class="c battle-fought">
+              163
+            </td>
+            <td class="c battle-points">
+              325 <span class="increase">&#9650;7</span>
+            </td>
+            <td class="c battle-won">
+              130
+            </td>
+            <td class="c battle-lost">
+              33
+            </td>
+            <td class="c battle-marks-won">
+              $ 34968 <span class="increase">&#9650;346</span>
+            </td>
+            <td class="c battle-marks-lost">
+              $ -2498 <span class="decrease">&#9650;0</span>
+            </td>
+          </tr>
+
+              <tr>
+            <td class="c battle-name">
+              <a href="https://leviathan-myth.com/dragon.php?id=5891" target="_top">Quickbleed</a>
             </td>
             <td class="c battle-age">
               68
             </td>
             <td class="c battle-int">
-              251 <span class="increase">▲7</span>
+              267 <span class="increase">&#9650;6</span>
             </td>
             <td class="c battle-spd">
-              181 <span class="increase">▲3</span>
+              200 <span class="increase">&#9650;3</span>
             </td>
             <td class="c battle-pwr">
-              249 <span class="increase">▲4</span>
+              291 <span class="increase">&#9650;6</span>
             </td>
             <td class="c battle-vis">
-              89 <span class="increase">▲1</span>
+              84 <span class="increase">&#9650;0</span>
             </td>
             <td class="c battle-fought">
-              174
+              196
             </td>
             <td class="c battle-points">
-              332 <span class="increase">▲6</span>
+              342 <span class="increase">&#9650;4</span>
             </td>
             <td class="c battle-won">
               143
             </td>
             <td class="c battle-lost">
-              31
+              53
             </td>
             <td class="c battle-marks-won">
-              $ 65724 <span class="increase">▲365</span>
+              $ 29834 <span class="increase">&#9650;155</span>
             </td>
             <td class="c battle-marks-lost">
-              $ -2362 <span class="decrease">▼0</span>
+              $ -4005 <span class="decrease">&#9650;0</span>
             </td>
           </tr>
-         
+
               <tr>
             <td class="c battle-name">
-              <a href="https://leviathan-myth.com/dragon.php?id=6517" target="_top">Alcmene</a>
+              <a href="https://leviathan-myth.com/dragon.php?id=6516" target="_top">Phile</a>
             </td>
             <td class="c battle-age">
-              45
+              47
             </td>
             <td class="c battle-int">
-              152 <span class="increase">▲2</span>
+              184 <span class="increase">&#9650;1</span>
             </td>
             <td class="c battle-spd">
-              134 <span class="increase">▲3</span>
+              149 <span class="increase">&#9650;4</span>
             </td>
             <td class="c battle-pwr">
-              178 <span class="increase">▲10</span>
+              205 <span class="increase">&#9650;5</span>
             </td>
             <td class="c battle-vis">
-              63 <span class="increase">▲3</span>
+              84 <span class="increase">&#9650;3</span>
             </td>
             <td class="c battle-fought">
-              124
+              133
             </td>
             <td class="c battle-points">
-              221 <span class="increase">▲11</span>
+              295 <span class="increase">&#9650;3</span>
             </td>
             <td class="c battle-won">
-              97
+              112
             </td>
             <td class="c battle-lost">
-              27
+              21
             </td>
             <td class="c battle-marks-won">
-              $ 30789 <span class="increase">▲2347</span>
+              $ 36594 <span class="increase">&#9650;137</span>
             </td>
             <td class="c battle-marks-lost">
-              $ -2036 <span class="decrease">▼77</span>
+              $ -1525 <span class="decrease">&#9650;0</span>
             </td>
           </tr>
-         
+
               <tr>
             <td class="c battle-name">
-              <a href="https://leviathan-myth.com/dragon.php?id=6901" target="_top">Adrastea</a>
+              <a href="https://leviathan-myth.com/dragon.php?id=5908" target="_top">Oedipus </a>
             </td>
             <td class="c battle-age">
-              25
+              70
             </td>
             <td class="c battle-int">
-              92 <span class="increase">▲1</span>
+              257 <span class="increase">&#9650;3</span>
             </td>
             <td class="c battle-spd">
-              79 <span class="increase">▲5</span>
+              189 <span class="increase">&#9650;4</span>
             </td>
             <td class="c battle-pwr">
-              62 <span class="increase">▲3</span>
+              267 <span class="increase">&#9650;0</span>
             </td>
             <td class="c battle-vis">
-              34 <span class="increase">▲2</span>
+              101 <span class="increase">&#9650;0</span>
             </td>
             <td class="c battle-fought">
+              183
+            </td>
+            <td class="c battle-points">
+              363 <span class="increase">&#9650;2</span>
+            </td>
+            <td class="c battle-won">
+              153
+            </td>
+            <td class="c battle-lost">
               30
             </td>
-            <td class="c battle-points">
-              78 <span class="increase">▲13</span>
-            </td>
-            <td class="c battle-won">
-              29
-            </td>
-            <td class="c battle-lost">
-              1
-            </td>
             <td class="c battle-marks-won">
-              $ 7373 <span class="increase">▲757</span>
+              $ 79755 <span class="increase">&#9650;53</span>
             </td>
             <td class="c battle-marks-lost">
-              $ -80 <span class="decrease">▼80</span>
+              $ -2109 <span class="decrease">&#9650;0</span>
             </td>
           </tr>
-         
+
               <tr>
             <td class="c battle-name">
-              <a href="https://leviathan-myth.com/dragon.php?id=6286" target="_top">Adonis </a>
+              <a href="https://leviathan-myth.com/dragon.php?id=6513" target="_top">Niobe</a>
+            </td>
+            <td class="c battle-age">
+              47
+            </td>
+            <td class="c battle-int">
+              202 <span class="increase">&#9650;8</span>
+            </td>
+            <td class="c battle-spd">
+              143 <span class="increase">&#9650;4</span>
+            </td>
+            <td class="c battle-pwr">
+              216 <span class="increase">&#9650;7</span>
+            </td>
+            <td class="c battle-vis">
+              54 <span class="increase">&#9650;2</span>
+            </td>
+            <td class="c battle-fought">
+              133
+            </td>
+            <td class="c battle-points">
+              285 <span class="increase">&#9650;13</span>
+            </td>
+            <td class="c battle-won">
+              108
+            </td>
+            <td class="c battle-lost">
+              25
+            </td>
+            <td class="c battle-marks-won">
+              $ 16658 <span class="increase">&#9650;741</span>
+            </td>
+            <td class="c battle-marks-lost">
+              $ -1884 <span class="decrease">&#9650;0</span>
+            </td>
+          </tr>
+
+              <tr>
+            <td class="c battle-name">
+              <a href="https://leviathan-myth.com/dragon.php?id=6322" target="_top">Nestor</a>
             </td>
             <td class="c battle-age">
               57
             </td>
             <td class="c battle-int">
-              218 <span class="increase">▲10</span>
+              222 <span class="increase">&#9650;3</span>
             </td>
             <td class="c battle-spd">
-              185 <span class="increase">▲2</span>
+              179 <span class="increase">&#9650;2</span>
             </td>
             <td class="c battle-pwr">
-              220 <span class="increase">▲6</span>
+              228 <span class="increase">&#9650;2</span>
             </td>
             <td class="c battle-vis">
-              84 <span class="increase">▲3</span>
+              73 <span class="increase">&#9650;2</span>
             </td>
             <td class="c battle-fought">
-              154
+              152
             </td>
             <td class="c battle-points">
-              317 <span class="increase">▲11</span>
+              308 <span class="increase">&#9650;8</span>
             </td>
             <td class="c battle-won">
-              118
+              130
+            </td>
+            <td class="c battle-lost">
+              22
+            </td>
+            <td class="c battle-marks-won">
+              $ 88147 <span class="increase">&#9650;1338</span>
+            </td>
+            <td class="c battle-marks-lost">
+              $ -1706 <span class="decrease">&#9650;0</span>
+            </td>
+          </tr>
+
+              <tr>
+            <td class="c battle-name">
+              <a href="https://leviathan-myth.com/dragon.php?id=4092" target="_top">Neptune</a>
+            </td>
+            <td class="c battle-age">
+              75
+            </td>
+            <td class="c battle-int">
+              259 <span class="increase">&#9650;0</span>
+            </td>
+            <td class="c battle-spd">
+              197 <span class="increase">&#9650;4</span>
+            </td>
+            <td class="c battle-pwr">
+              298 <span class="increase">&#9650;13</span>
+            </td>
+            <td class="c battle-vis">
+              96 <span class="increase">&#9650;1</span>
+            </td>
+            <td class="c battle-fought">
+              200
+            </td>
+            <td class="c battle-points">
+              391 <span class="increase">&#9650;12</span>
+            </td>
+            <td class="c battle-won">
+              160
+            </td>
+            <td class="c battle-lost">
+              40
+            </td>
+            <td class="c battle-marks-won">
+              $ 73298 <span class="increase">&#9650;1415</span>
+            </td>
+            <td class="c battle-marks-lost">
+              $ -3020 <span class="decrease">&#9650;0</span>
+            </td>
+          </tr>
+
+              <tr>
+            <td class="c battle-name">
+              <a href="https://leviathan-myth.com/dragon.php?id=6906" target="_top">Merope</a>
+            </td>
+            <td class="c battle-age">
+              27
+            </td>
+            <td class="c battle-int">
+              103 <span class="increase">&#9650;4</span>
+            </td>
+            <td class="c battle-spd">
+              94 <span class="increase">&#9650;6</span>
+            </td>
+            <td class="c battle-pwr">
+              75 <span class="increase">&#9650;5</span>
+            </td>
+            <td class="c battle-vis">
+              43 <span class="increase">&#9650;2</span>
+            </td>
+            <td class="c battle-fought">
+              40
+            </td>
+            <td class="c battle-points">
+              91 <span class="increase">&#9650;13</span>
+            </td>
+            <td class="c battle-won">
+              34
+            </td>
+            <td class="c battle-lost">
+              6
+            </td>
+            <td class="c battle-marks-won">
+              $ 5435 <span class="increase">&#9650;793</span>
+            </td>
+            <td class="c battle-marks-lost">
+              $ -485 <span class="decrease">&#9650;97</span>
+            </td>
+          </tr>
+
+              <tr>
+            <td class="c battle-name">
+              <a href="https://leviathan-myth.com/dragon.php?id=5912" target="_top">Medea </a>
+            </td>
+            <td class="c battle-age">
+              70
+            </td>
+            <td class="c battle-int">
+              240 <span class="increase">&#9650;5</span>
+            </td>
+            <td class="c battle-spd">
+              184 <span class="increase">&#9650;5</span>
+            </td>
+            <td class="c battle-pwr">
+              290 <span class="increase">&#9650;6</span>
+            </td>
+            <td class="c battle-vis">
+              100 <span class="increase">&#9650;3</span>
+            </td>
+            <td class="c battle-fought">
+              179
+            </td>
+            <td class="c battle-points">
+              333 <span class="increase">&#9650;3</span>
+            </td>
+            <td class="c battle-won">
+              147
+            </td>
+            <td class="c battle-lost">
+              32
+            </td>
+            <td class="c battle-marks-won">
+              $ 79506 <span class="increase">&#9650;110</span>
+            </td>
+            <td class="c battle-marks-lost">
+              $ -2404 <span class="decrease">&#9650;0</span>
+            </td>
+          </tr>
+
+              <tr>
+            <td class="c battle-name">
+              <a href="https://leviathan-myth.com/dragon.php?id=6132" target="_top">Lernaean</a>
+            </td>
+            <td class="c battle-age">
+              65
+            </td>
+            <td class="c battle-int">
+              244 <span class="increase">&#9650;5</span>
+            </td>
+            <td class="c battle-spd">
+              197 <span class="increase">&#9650;4</span>
+            </td>
+            <td class="c battle-pwr">
+              256 <span class="increase">&#9650;6</span>
+            </td>
+            <td class="c battle-vis">
+              97 <span class="increase">&#9650;3</span>
+            </td>
+            <td class="c battle-fought">
+              178
+            </td>
+            <td class="c battle-points">
+              337 <span class="increase">&#9650;4</span>
+            </td>
+            <td class="c battle-won">
+              144
+            </td>
+            <td class="c battle-lost">
+              34
+            </td>
+            <td class="c battle-marks-won">
+              $ 25713 <span class="increase">&#9650;131</span>
+            </td>
+            <td class="c battle-marks-lost">
+              $ -2526 <span class="decrease">&#9650;0</span>
+            </td>
+          </tr>
+
+              <tr>
+            <td class="c battle-name">
+              <a href="https://leviathan-myth.com/dragon.php?id=6285" target="_top">Ladon </a>
+            </td>
+            <td class="c battle-age">
+              59
+            </td>
+            <td class="c battle-int">
+              209 <span class="increase">&#9650;4</span>
+            </td>
+            <td class="c battle-spd">
+              195 <span class="increase">&#9650;4</span>
+            </td>
+            <td class="c battle-pwr">
+              261 <span class="increase">&#9650;4</span>
+            </td>
+            <td class="c battle-vis">
+              70 <span class="increase">&#9650;1</span>
+            </td>
+            <td class="c battle-fought">
+              164
+            </td>
+            <td class="c battle-points">
+              341 <span class="increase">&#9650;2</span>
+            </td>
+            <td class="c battle-won">
+              127
+            </td>
+            <td class="c battle-lost">
+              37
+            </td>
+            <td class="c battle-marks-won">
+              $ 94731 <span class="increase">&#9650;76</span>
+            </td>
+            <td class="c battle-marks-lost">
+              $ -2705 <span class="decrease">&#9650;0</span>
+            </td>
+          </tr>
+
+              <tr>
+            <td class="c battle-name">
+              <a href="https://leviathan-myth.com/dragon.php?id=6465" target="_top">Jocasta</a>
+            </td>
+            <td class="c battle-age">
+              50
+            </td>
+            <td class="c battle-int">
+              180 <span class="increase">&#9650;3</span>
+            </td>
+            <td class="c battle-spd">
+              160 <span class="increase">&#9650;3</span>
+            </td>
+            <td class="c battle-pwr">
+              230 <span class="increase">&#9650;2</span>
+            </td>
+            <td class="c battle-vis">
+              77 <span class="increase">&#9650;1</span>
+            </td>
+            <td class="c battle-fought">
+              142
+            </td>
+            <td class="c battle-points">
+              294 <span class="increase">&#9650;4</span>
+            </td>
+            <td class="c battle-won">
+              131
+            </td>
+            <td class="c battle-lost">
+              11
+            </td>
+            <td class="c battle-marks-won">
+              $ 61352 <span class="increase">&#9650;867</span>
+            </td>
+            <td class="c battle-marks-lost">
+              $ -790 <span class="decrease">&#9650;0</span>
+            </td>
+          </tr>
+
+              <tr>
+            <td class="c battle-name">
+              <a href="https://leviathan-myth.com/dragon.php?id=6323" target="_top">Io</a>
+            </td>
+            <td class="c battle-age">
+              57
+            </td>
+            <td class="c battle-int">
+              208 <span class="increase">&#9650;6</span>
+            </td>
+            <td class="c battle-spd">
+              178 <span class="increase">&#9650;6</span>
+            </td>
+            <td class="c battle-pwr">
+              234 <span class="increase">&#9650;7</span>
+            </td>
+            <td class="c battle-vis">
+              92 <span class="increase">&#9650;2</span>
+            </td>
+            <td class="c battle-fought">
+              153
+            </td>
+            <td class="c battle-points">
+              294 <span class="increase">&#9650;5</span>
+            </td>
+            <td class="c battle-won">
+              132
+            </td>
+            <td class="c battle-lost">
+              21
+            </td>
+            <td class="c battle-marks-won">
+              $ 62873 <span class="increase">&#9650;183</span>
+            </td>
+            <td class="c battle-marks-lost">
+              $ -1673 <span class="decrease">&#9650;0</span>
+            </td>
+          </tr>
+
+              <tr>
+            <td class="c battle-name">
+              <a href="https://leviathan-myth.com/dragon.php?id=6769" target="_top">Hestia</a>
+            </td>
+            <td class="c battle-age">
+              34
+            </td>
+            <td class="c battle-int">
+              158 <span class="increase">&#9650;5</span>
+            </td>
+            <td class="c battle-spd">
+              113 <span class="increase">&#9650;2</span>
+            </td>
+            <td class="c battle-pwr">
+              126 <span class="increase">&#9650;4</span>
+            </td>
+            <td class="c battle-vis">
+              59 <span class="increase">&#9650;0</span>
+            </td>
+            <td class="c battle-fought">
+              75
+            </td>
+            <td class="c battle-points">
+              187 <span class="increase">&#9650;16</span>
+            </td>
+            <td class="c battle-won">
+              70
+            </td>
+            <td class="c battle-lost">
+              5
+            </td>
+            <td class="c battle-marks-won">
+              $ 51669 <span class="increase">&#9650;8538</span>
+            </td>
+            <td class="c battle-marks-lost">
+              $ -328 <span class="decrease">&#9650;51</span>
+            </td>
+          </tr>
+
+              <tr>
+            <td class="c battle-name">
+              <a href="https://leviathan-myth.com/dragon.php?id=6643" target="_top">Harmonia</a>
+            </td>
+            <td class="c battle-age">
+              40
+            </td>
+            <td class="c battle-int">
+              186 <span class="increase">&#9650;7</span>
+            </td>
+            <td class="c battle-spd">
+              135 <span class="increase">&#9650;2</span>
+            </td>
+            <td class="c battle-pwr">
+              169 <span class="increase">&#9650;3</span>
+            </td>
+            <td class="c battle-vis">
+              61 <span class="increase">&#9650;1</span>
+            </td>
+            <td class="c battle-fought">
+              102
+            </td>
+            <td class="c battle-points">
+              234 <span class="increase">&#9650;12</span>
+            </td>
+            <td class="c battle-won">
+              96
+            </td>
+            <td class="c battle-lost">
+              6
+            </td>
+            <td class="c battle-marks-won">
+              $ 62879 <span class="increase">&#9650;4817</span>
+            </td>
+            <td class="c battle-marks-lost">
+              $ -449 <span class="decrease">&#9650;0</span>
+            </td>
+          </tr>
+
+              <tr>
+            <td class="c battle-name">
+              <a href="https://leviathan-myth.com/dragon.php?id=6515" target="_top">Eurydice</a>
+            </td>
+            <td class="c battle-age">
+              47
+            </td>
+            <td class="c battle-int">
+              160 <span class="increase">&#9650;3</span>
+            </td>
+            <td class="c battle-spd">
+              145 <span class="increase">&#9650;3</span>
+            </td>
+            <td class="c battle-pwr">
+              199 <span class="increase">&#9650;2</span>
+            </td>
+            <td class="c battle-vis">
+              69 <span class="increase">&#9650;3</span>
+            </td>
+            <td class="c battle-fought">
+              131
+            </td>
+            <td class="c battle-points">
+              256 <span class="increase">&#9650;6</span>
+            </td>
+            <td class="c battle-won">
+              111
+            </td>
+            <td class="c battle-lost">
+              20
+            </td>
+            <td class="c battle-marks-won">
+              $ 14851 <span class="increase">&#9650;363</span>
+            </td>
+            <td class="c battle-marks-lost">
+              $ -1434 <span class="decrease">&#9650;0</span>
+            </td>
+          </tr>
+
+              <tr>
+            <td class="c battle-name">
+              <a href="https://leviathan-myth.com/dragon.php?id=6932" target="_top">Eteocles</a>
+            </td>
+            <td class="c battle-age">
+              24
+            </td>
+            <td class="c battle-int">
+              101 <span class="increase">&#9650;3</span>
+            </td>
+            <td class="c battle-spd">
+              83 <span class="increase">&#9650;4</span>
+            </td>
+            <td class="c battle-pwr">
+              74 <span class="increase">&#9650;8</span>
+            </td>
+            <td class="c battle-vis">
+              39 <span class="increase">&#9650;1</span>
+            </td>
+            <td class="c battle-fought">
+              25
+            </td>
+            <td class="c battle-points">
+              65 <span class="increase">&#9650;11</span>
+            </td>
+            <td class="c battle-won">
+              22
+            </td>
+            <td class="c battle-lost">
+              3
+            </td>
+            <td class="c battle-marks-won">
+              $ 18909 <span class="increase">&#9650;707</span>
+            </td>
+            <td class="c battle-marks-lost">
+              $ -211 <span class="decrease">&#9650;149</span>
+            </td>
+          </tr>
+
+              <tr>
+            <td class="c battle-name">
+              <a href="https://leviathan-myth.com/dragon.php?id=6514" target="_top">Dardanus</a>
+            </td>
+            <td class="c battle-age">
+              47
+            </td>
+            <td class="c battle-int">
+              186 <span class="increase">&#9650;4</span>
+            </td>
+            <td class="c battle-spd">
+              161 <span class="increase">&#9650;4</span>
+            </td>
+            <td class="c battle-pwr">
+              163 <span class="increase">&#9650;4</span>
+            </td>
+            <td class="c battle-vis">
+              66 <span class="increase">&#9650;3</span>
+            </td>
+            <td class="c battle-fought">
+              131
+            </td>
+            <td class="c battle-points">
+              264 <span class="increase">&#9650;4</span>
+            </td>
+            <td class="c battle-won">
+              112
+            </td>
+            <td class="c battle-lost">
+              19
+            </td>
+            <td class="c battle-marks-won">
+              $ 16730 <span class="increase">&#9650;188</span>
+            </td>
+            <td class="c battle-marks-lost">
+              $ -1356 <span class="decrease">&#9650;0</span>
+            </td>
+          </tr>
+
+              <tr>
+            <td class="c battle-name">
+              <a href="https://leviathan-myth.com/dragon.php?id=6900" target="_top">Cybele</a>
+            </td>
+            <td class="c battle-age">
+              27
+            </td>
+            <td class="c battle-int">
+              107 <span class="increase">&#9650;4</span>
+            </td>
+            <td class="c battle-spd">
+              83 <span class="increase">&#9650;3</span>
+            </td>
+            <td class="c battle-pwr">
+              77 <span class="increase">&#9650;5</span>
+            </td>
+            <td class="c battle-vis">
+              42 <span class="increase">&#9650;0</span>
+            </td>
+            <td class="c battle-fought">
+              40
+            </td>
+            <td class="c battle-points">
+              93 <span class="increase">&#9650;13</span>
+            </td>
+            <td class="c battle-won">
+              36
+            </td>
+            <td class="c battle-lost">
+              4
+            </td>
+            <td class="c battle-marks-won">
+              $ 8343 <span class="increase">&#9650;864</span>
+            </td>
+            <td class="c battle-marks-lost">
+              $ -329 <span class="decrease">&#9650;96</span>
+            </td>
+          </tr>
+
+              <tr>
+            <td class="c battle-name">
+              <a href="https://leviathan-myth.com/dragon.php?id=6512" target="_top">Cadmus</a>
+            </td>
+            <td class="c battle-age">
+              47
+            </td>
+            <td class="c battle-int">
+              153 <span class="increase">&#9650;4</span>
+            </td>
+            <td class="c battle-spd">
+              152 <span class="increase">&#9650;7</span>
+            </td>
+            <td class="c battle-pwr">
+              176 <span class="increase">&#9650;2</span>
+            </td>
+            <td class="c battle-vis">
+              72 <span class="increase">&#9650;0</span>
+            </td>
+            <td class="c battle-fought">
+              133
+            </td>
+            <td class="c battle-points">
+              272 <span class="increase">&#9650;5</span>
+            </td>
+            <td class="c battle-won">
+              111
+            </td>
+            <td class="c battle-lost">
+              22
+            </td>
+            <td class="c battle-marks-won">
+              $ 15506 <span class="increase">&#9650;276</span>
+            </td>
+            <td class="c battle-marks-lost">
+              $ -1602 <span class="decrease">&#9650;0</span>
+            </td>
+          </tr>
+
+              <tr>
+            <td class="c battle-name">
+              <a href="https://leviathan-myth.com/dragon.php?id=5907" target="_top">Andro</a>
+            </td>
+            <td class="c battle-age">
+              70
+            </td>
+            <td class="c battle-int">
+              262 <span class="increase">&#9650;7</span>
+            </td>
+            <td class="c battle-spd">
+              189 <span class="increase">&#9650;3</span>
+            </td>
+            <td class="c battle-pwr">
+              256 <span class="increase">&#9650;2</span>
+            </td>
+            <td class="c battle-vis">
+              93 <span class="increase">&#9650;2</span>
+            </td>
+            <td class="c battle-fought">
+              184
+            </td>
+            <td class="c battle-points">
+              350 <span class="increase">&#9650;10</span>
+            </td>
+            <td class="c battle-won">
+              153
+            </td>
+            <td class="c battle-lost">
+              31
+            </td>
+            <td class="c battle-marks-won">
+              $ 68102 <span class="increase">&#9650;1215</span>
+            </td>
+            <td class="c battle-marks-lost">
+              $ -2362 <span class="decrease">&#9650;0</span>
+            </td>
+          </tr>
+
+              <tr>
+            <td class="c battle-name">
+              <a href="https://leviathan-myth.com/dragon.php?id=6517" target="_top">Alcmene</a>
+            </td>
+            <td class="c battle-age">
+              47
+            </td>
+            <td class="c battle-int">
+              162 <span class="increase">&#9650;8</span>
+            </td>
+            <td class="c battle-spd">
+              141 <span class="increase">&#9650;6</span>
+            </td>
+            <td class="c battle-pwr">
+              186 <span class="increase">&#9650;4</span>
+            </td>
+            <td class="c battle-vis">
+              66 <span class="increase">&#9650;2</span>
+            </td>
+            <td class="c battle-fought">
+              133
+            </td>
+            <td class="c battle-points">
+              242 <span class="increase">&#9650;9</span>
+            </td>
+            <td class="c battle-won">
+              106
+            </td>
+            <td class="c battle-lost">
+              27
+            </td>
+            <td class="c battle-marks-won">
+              $ 33379 <span class="increase">&#9650;524</span>
+            </td>
+            <td class="c battle-marks-lost">
+              $ -2036 <span class="decrease">&#9650;0</span>
+            </td>
+          </tr>
+
+              <tr>
+            <td class="c battle-name">
+              <a href="https://leviathan-myth.com/dragon.php?id=6901" target="_top">Adrastea</a>
+            </td>
+            <td class="c battle-age">
+              27
+            </td>
+            <td class="c battle-int">
+              105 <span class="increase">&#9650;5</span>
+            </td>
+            <td class="c battle-spd">
+              86 <span class="increase">&#9650;4</span>
+            </td>
+            <td class="c battle-pwr">
+              75 <span class="increase">&#9650;8</span>
+            </td>
+            <td class="c battle-vis">
+              36 <span class="increase">&#9650;1</span>
+            </td>
+            <td class="c battle-fought">
+              40
+            </td>
+            <td class="c battle-points">
+              107 <span class="increase">&#9650;15</span>
+            </td>
+            <td class="c battle-won">
+              39
+            </td>
+            <td class="c battle-lost">
+              1
+            </td>
+            <td class="c battle-marks-won">
+              $ 9379 <span class="increase">&#9650;1122</span>
+            </td>
+            <td class="c battle-marks-lost">
+              $ -80 <span class="decrease">&#9650;0</span>
+            </td>
+          </tr>
+
+              <tr>
+            <td class="c battle-name">
+              <a href="https://leviathan-myth.com/dragon.php?id=6286" target="_top">Adonis </a>
+            </td>
+            <td class="c battle-age">
+              59
+            </td>
+            <td class="c battle-int">
+              223 <span class="increase">&#9650;3</span>
+            </td>
+            <td class="c battle-spd">
+              196 <span class="increase">&#9650;6</span>
+            </td>
+            <td class="c battle-pwr">
+              228 <span class="increase">&#9650;4</span>
+            </td>
+            <td class="c battle-vis">
+              87 <span class="increase">&#9650;0</span>
+            </td>
+            <td class="c battle-fought">
+              165
+            </td>
+            <td class="c battle-points">
+              346 <span class="increase">&#9650;13</span>
+            </td>
+            <td class="c battle-won">
+              129
             </td>
             <td class="c battle-lost">
               36
             </td>
             <td class="c battle-marks-won">
-              $ 98720 <span class="increase">▲4521</span>
+              $ 106928 <span class="increase">&#9650;3697</span>
             </td>
             <td class="c battle-marks-lost">
-              $ -2725 <span class="decrease">▼0</span>
+              $ -2725 <span class="decrease">&#9650;0</span>
             </td>
           </tr>
-         
+
 
 
     </tbody>
   </table>
-    
+
 </div>
 
 <!-- Styling -->
-    
+
 <style>
 /* ------- Container stuff -----------*/
 .collapsible {
@@ -1224,21 +1230,30 @@ td {
 }
 
 </style>
-    
+
+
 <!-- Scripting -->
-    
+
     <script>
 
-// Send the height information to the parent page
-function sendHeightToParent() {
-  var height = document.body.scrollHeight;
-  parent.postMessage({ height: height }, '*');
-}
+  // Send the height information to the parent page
+  function sendHeightToParent() {
+    var height = document.body.scrollHeight;
+    parent.postMessage({ height: height }, '*');
+  }
 
-// Call the sendHeightToParent function whenever the content changes
-// For example, after the page finishes loading or when new content is added dynamically
-window.addEventListener('load', sendHeightToParent);
+  // Call the sendHeightToParent function whenever the content changes
+  // For example, after the page finishes loading or when new content is added dynamically
+  $(document).ready(function() {
+    sendHeightToParent(); // Initially send the height to the parent
+
+    // Adjust the height when the content changes
+    $('table.custom-table').on('click', function() {
+      sendHeightToParent();
+    });
+  });
+
+
 
 </script>   
-    
     
