@@ -369,7 +369,7 @@ td {
 <script>
   function sendHeightToParent() {
     var height = $('div.mini-html').height();
-    parent.postMessage({ height: height }, '*');
+    parent.postMessage({ height: height }, 'https://www.flapjack.wtf'); // Adjust the origin accordingly
   }
 
   // Call the sendHeightToParent function whenever the content changes
