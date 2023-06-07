@@ -1,10 +1,6 @@
 <!--        <div id="content-wrapper">-->
 <!--  <iframe id="content-iframe" src="https://corey-smith-eng.github.io/" frameborder="0" width="100%" scrolling="no"></iframe>-->
 <!--</div>-->
-
-
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <div class="mini-html">
         <!-- Battle Table -->
 
@@ -1231,28 +1227,19 @@ td {
 
 </style>
 
-
 <!-- Scripting -->
 
-    <script>
+<script>
 
-  // Send the height information to the parent page
-  function sendHeightToParent() {
-    var height = document.body.scrollHeight;
-    parent.postMessage({ height: height }, '*');
-  }
+// Send the height information to the parent page
+function sendHeightToParent() {
+  var height = document.body.scrollHeight;
+  parent.postMessage({ height: height }, '*');
+}
 
-  // Call the sendHeightToParent function whenever the content changes
-  // For example, after the page finishes loading or when new content is added dynamically
-  $(document).ready(function() {
-    sendHeightToParent(); // Initially send the height to the parent
-
-    // Adjust the height when the content changes
-    $('table.custom-table').on('click', function() {
-      sendHeightToParent();
-    });
-  });
-
+// Call the sendHeightToParent function whenever the content changes
+// For example, after the page finishes loading or when new content is added dynamically
+window.addEventListener('load', sendHeightToParent);
 
 
 </script>   
