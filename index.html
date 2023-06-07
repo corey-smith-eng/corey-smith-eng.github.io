@@ -1223,14 +1223,24 @@ td {
 </style>
 <!-- Scripting -->
 <script>
-// Send the height information to the parent page
-function sendHeightToParent() {
-  var height = document.body.scrollHeight;
-  parent.postMessage({ height: height }, '*');
-}
+  function sendHeightToParent() {
+    var height = $('iframe#content-iframe').contents().find('body').height();
+    $('#content-wrapper').height(height);
+  }
 
-// Call the sendHeightToParent function whenever the content changes
-// For example, after the page finishes loading or when new content is added dynamically
-window.addEventListener('load', sendHeightToParent);
+  // Create a MutationObserver to detect changes in the mini-html div
+  var observer = new MutationObserver(function(mutations) {
+    sendHeightToParent();
+  });
+
+  // Observe changes in the mini-html div
+  var miniHtml = document.querySelector('.mini-html');
+  observer.observe(miniHtml, { childList: true, subtree: true });
+
+  // Call the sendHeightToParent function initially and when the iframe is loaded
+  $(document).ready(function() {
+    sendHeightToParent();
+    $('iframe#content-iframe').on('load', sendHeightToParent);
+  });
 </script>   
     
